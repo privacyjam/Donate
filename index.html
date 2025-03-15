@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .crypto-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+        }
+        .address {
+            font-size: 14px;
+            word-wrap: break-word;
+            margin: 10px 0;
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .copy-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none;
+            transition: background 0.3s ease;
+        }
+        .copy-btn.copied {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Donations</h2>
+
+    <div class="crypto-container">
+        <h3>Bitcoin (BTC)</h3>
+        <p class="address" id="btc-address">bc1qdfe9vav3uf2gpge854acdqxucgfhytyydar9fr</p>
+        <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
+    </div>
+
+    <div class="crypto-container">
+        <h3>Monero (XMR)</h3>
+        <p class="address" id="xmr-address">8BQN7B2Wfh84P4ooyyKHbC9utqr186us7bcqVDn8fLNMenfNskyecyrWxjq2E9so9MK5DQfmkxMV5LJuUuxmiLUARwSPneY</p>
+        <button class="copy-btn" onclick="copyToClipboard(this, 'xmr-address')">Copy Address</button>
+    </div>
+
+    <script>
+        document.querySelectorAll(".copy-btn").forEach(btn => btn.style.display = "inline-block");
+
+        function copyToClipboard(button, id) {
+            navigator.clipboard.writeText(document.getElementById(id).innerText).then(() => {
+                button.textContent = "Copied!";
+                button.classList.add("copied");
+                setTimeout(() => {
+                    button.textContent = "Copy Address";
+                    button.classList.remove("copied");
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
