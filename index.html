@@ -46,6 +46,12 @@
         .copy-btn.copied {
             background-color: #28a745;
         }
+        /* Optional: a little spacing for the logos */
+        .coin-logo {
+            width: 20px;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
     </style>
 </head>
 <body>
@@ -53,18 +59,45 @@
     <h2>Donate</h2>
 
     <div class="crypto-container">
-        <h3>Bitcoin (BTC)</h3>
+        <h3>
+            <!-- Bitcoin logos on each side -->
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAADuElEQVR4nJ2VPWyVVRjHf//nfd/71UsBmyptSiiKIZoA6qAk4GIUF2OiQwsSo24ark7GbjbIYExc1DK6QDTQIMRBo5LIBMbBBBATS2IIJrTGWoR+3Nv73vecx6EtlEQcPNMZnq9/nt/5H7Hq+DiJhgjTH/Ss6e6u7JX7i+48EiO9AGZMS5x36eTs7OKx3pGZuZWclRoCcBCjSAeJzU/6Xipl9m5ibMWhKJzCBUAqJ00FgiJwuVPEg7U3pz73UYyDuMDlIMYxDRGaY31j1VpywHOnlXuUACTFQniBp1UH3GOkWpKpJNrNcLjSmGr4OAlDRK2M3Py4b6y6NjmwOBs7DonAwAGh8jqorMVnJsADlOq4exSESrdlrZvhcO2tpaICaI71D1W77PjifOw4LIsCLCVe/53Sng9Rz0OEi59iA7spzh6CrAv36IKiUrestRCHa43JcflYb70Vs59LJW3KO+6SjJCjrvsoDX1DnPwR2/AY4bevUPcmaN8g//JltH4QQo5DLGVSnvvVqnW22WJMh6sVDbZzd4HhDkrx9hzFD++TbH0BrR0kffR1ki3PoTUbsc1PQfsmyBBYO3evVjS4GNNhc7EXx034LX7MoLNAuHwKX/wb2rPkJ56nOPseNrCL8vC32MAu6CyADBOO4+7sNaEdReFysNtEGoQcG9iNKvcQrp0j/Po1ndOjhIkvwFJs8x680wQZDlYULpl2pA49RYRbi4CloFhg/U8AjvU9Tmn4JLRnsfufhXyOePUMSqvgEYGKCA49q6ZaxXrsIEuw/p2ACJeOQuyQbHsFldcRLp8iXPkOSmvA4x3ZJphJl4hz0HKA0PoHsXu3463rFOcOkZ8Ypn1kJ57Pkjy8j2Tjk5DPrUj21EAwY45fSFO5IKKlZWTPfET5tZ+gVIfWX6h3O+rdgio94A6WQVa/3RximsrlnE/lHEM8HR0ZAbIa4dIRfGaCZPuraP0DlPedhhghyQCI0xeJ184tNfRAdISQ48f/HezFm5CWKb9xheL7t0l3jhD/vADzU3g+T7h0FF/4A9IK7vEOsFM1puebY/0jSVnH1fHCHalUl+r9hF8+w29cgayLzpl3lu5pBWVdkJZXnl5IysoofESN6fm7m4MHI5+DWi/q2oDPTYKWyfJwd3P4T/uyBGIhxVwk5WUScHdu2VerGQ7XVtmXCZwhoo9itcZUo7UQ9keYqFVk1SxalphIqwBkhqolWa0iizDRWgj7a42pho9iDBEFrtVQrsj3sd56npT2/Z8v4B9LIwqmu+r2AgAAAABJRU5ErkJggg==" 
+              alt="Bitcoin Logo" 
+              class="coin-logo"
+            />
+            Bitcoin (BTC)
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAADuElEQVR4nJ2VPWyVVRjHf//nfd/71UsBmyptSiiKIZoA6qAk4GIUF2OiQwsSo24ark7GbjbIYExc1DK6QDTQIMRBo5LIBMbBBBATS2IIJrTGWoR+3Nv73vecx6EtlEQcPNMZnq9/nt/5H7Hq+DiJhgjTH/Ss6e6u7JX7i+48EiO9AGZMS5x36eTs7OKx3pGZuZWclRoCcBCjSAeJzU/6Xipl9m5ibMWhKJzCBUAqJ00FgiJwuVPEg7U3pz73UYyDuMDlIMYxDRGaY31j1VpywHOnlXuUACTFQniBp1UH3GOkWpKpJNrNcLjSmGr4OAlDRK2M3Py4b6y6NjmwOBs7DonAwAGh8jqorMVnJsADlOq4exSESrdlrZvhcO2tpaICaI71D1W77PjifOw4LIsCLCVe/53Sng9Rz0OEi59iA7spzh6CrAv36IKiUrestRCHa43JcflYb70Vs59LJW3KO+6SjJCjrvsoDX1DnPwR2/AY4bevUPcmaN8g//JltH4QQo5DLGVSnvvVqnW22WJMh6sVDbZzd4HhDkrx9hzFD++TbH0BrR0kffR1ki3PoTUbsc1PQfsmyBBYO3evVjS4GNNhc7EXx034LX7MoLNAuHwKX/wb2rPkJ56nOPseNrCL8vC32MAu6CyADBOO4+7sNaEdReFysNtEGoQcG9iNKvcQrp0j/Po1ndOjhIkvwFJs8x680wQZDlYULpl2pA49RYRbi4CloFhg/U8AjvU9Tmn4JLRnsfufhXyOePUMSqvgEYGKCA49q6ZaxXrsIEuw/p2ACJeOQuyQbHsFldcRLp8iXPkOSmvA4x3ZJphJl4hz0HKA0PoHsXu3463rFOcOkZ8Ypn1kJ57Pkjy8j2Tjk5DPrUj21EAwY45fSFO5IKKlZWTPfET5tZ+gVIfWX6h3O+rdgio94A6WQVa/3RximsrlnE/lHEM8HR0ZAbIa4dIRfGaCZPuraP0DlPedhhghyQCI0xeJ184tNfRAdISQ48f/HezFm5CWKb9xheL7t0l3jhD/vADzU3g+T7h0FF/4A9IK7vEOsFM1puebY/0jSVnH1fHCHalUl+r9hF8+w29cgayLzpl3lu5pBWVdkJZXnl5IysoofESN6fm7m4MHI5+DWi/q2oDPTYKWyfJwd3P4T/uyBGIhxVwk5WUScHdu2VerGQ7XVtmXCZwhoo9itcZUo7UQ9keYqFVk1SxalphIqwBkhqolWa0iizDRWgj7a42pho9iDBEFrtVQrsj3sd56npT2/Z8v4B9LIwqmu+r2AgAAAABJRU5ErkJggg==" 
+              alt="Bitcoin Logo" 
+              class="coin-logo"
+            />
+        </h3>
         <p class="address" id="btc-address">bc1qy9jazn7wrhsx9nslu3jjgd2ljj7de58elep7u4</p>
         <button class="copy-btn" onclick="copyToClipboard(this, 'btc-address')">Copy Address</button>
     </div>
 
     <div class="crypto-container">
-        <h3>Monero (XMR)</h3>
+        <h3>
+            <!-- Monero logos on each side -->
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAD1UlEQVR4nH2UTWhVRxTHf2c+3k1CXkxEKyJUaEVXRaGClpbaltLutA3cJLXgwoXaxE0XhVIXeXlFKXZrjEXsMk3yQPrcubG462s2la4qtpSCLX4m5KXG+zWni/duE6g4MAwzc85v5pzznxE2NI2x0qB4cHxPtb83/0hUhgvVfYXqFgAr8lBEfhbRq6tr7rut3/7aXoixIw2KkiEACsIkIlOE9qldRytOJ53IblUlLZRcO8ZOoGIFESFXvZ3mMlW9dGdWJzFMoQIqCkKMkQbFyviuC9WKTGRZ4EmuQTpHiqwfrCiqQJ8T473hn1Sn+y/eOa0xlgZByjCXTr00Pdgj4+2ETINaEQzPaaoEMVJUI/zKU7246dLvExpjBWD5k5dHN0Vmrl24TJ+sOIl6hRCexwNj0GRNpW8gr9rcryZhrDrz27w8OL6nWonCL9HTpRf1gy+U5b9Nev0bZGg7FNmzYdajS39Ref8UDG4P8v05SXuG/kwS84qJfD5WjczOtTRX4yPTc+w8/uCH6Mp9sP7ZsJX7+IPD9Bw7j/GRWUtz7Y/MzsjnY0YljAZFjTGqeQJA7/hl/IHh/0NL2IFhescvd3KZJxhjNCiqEkYdyN60UFEwSLcOYohOzgCQta4iA1s7zl1YdHKGjbYKJi1UQPY6lM15gFIaABoKjKusQ39qAvwHM86jeYoY22GC5AFQNrtyBSBoR8E/tlokacZbb79D5eQMmj0FoNKF/XDjBj1Rhddef4MQOj4ioIABfeSkFG1nM00zJmt1FhcXsc4TjV8hGr+CdZ7FxUVq9TppmpbxoKAdAeojI9bfqhCUUIQS6L3HGKFer9NqtbCVCFuJaLVa1Ot1jAjed4ulCqEIFYKK9bdc36ez83Zg8N2+tTVhYCuqSkBwziEi1Go1zp07C0CtVsN7j3OOgKCquDc/xu17T2xvr/StLM87u+vVuQLOeNgJBMA45yiKgnKs17/sPg7Dxj0RwQ9tCwxtkwL+sC8wJwBff3V25OHj5fksyzNE3Orqqty9exdjDCJC6D5DY0wnghDYsWMH/f39imruvfNbNg+Ofvb5mQWJ49g2Go3i0KFDF6rV6kSSJJkxxkZRZFTLCko3XevzJElCCKGIosi32+3pmzdvno7j2AogCwsLZmxsrDh8+PAF7/1EnudkWRa6zrIuLFS7VO+9cc6RZdn0tWvXTs/NzdmRkZFQGpZO4ciRI0eBSWPM7jK8jTfbkIbbwFSz2ZztyA8FtPzzFAhxHNtmszmrqvtV9UQI4TpwDyi6/V4I4bqqnlDV/c1mczaOY9stpgL8C5nv5U56EwNfAAAAAElFTkSuQmCC" 
+              alt="Monero Logo" 
+              class="coin-logo"
+            />
+            Monero (XMR)
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAD1UlEQVR4nH2UTWhVRxTHf2c+3k1CXkxEKyJUaEVXRaGClpbaltLutA3cJLXgwoXaxE0XhVIXeXlFKXZrjEXsMk3yQPrcubG462s2la4qtpSCLX4m5KXG+zWni/duE6g4MAwzc85v5pzznxE2NI2x0qB4cHxPtb83/0hUhgvVfYXqFgAr8lBEfhbRq6tr7rut3/7aXoixIw2KkiEACsIkIlOE9qldRytOJ53IblUlLZRcO8ZOoGIFESFXvZ3mMlW9dGdWJzFMoQIqCkKMkQbFyviuC9WKTGRZ4EmuQTpHiqwfrCiqQJ8T473hn1Sn+y/eOa0xlgZByjCXTr00Pdgj4+2ETINaEQzPaaoEMVJUI/zKU7246dLvExpjBWD5k5dHN0Vmrl24TJ+sOIl6hRCexwNj0GRNpW8gr9rcryZhrDrz27w8OL6nWonCL9HTpRf1gy+U5b9Nev0bZGg7FNmzYdajS39Ref8UDG4P8v05SXuG/kwS84qJfD5WjczOtTRX4yPTc+w8/uCH6Mp9sP7ZsJX7+IPD9Bw7j/GRWUtz7Y/MzsjnY0YljAZFjTGqeQJA7/hl/IHh/0NL2IFhescvd3KZJxhjNCiqEkYdyN60UFEwSLcOYohOzgCQta4iA1s7zl1YdHKGjbYKJi1UQPY6lM15gFIaABoKjKusQ39qAvwHM86jeYoY22GC5AFQNrtyBSBoR8E/tlokacZbb79D5eQMmj0FoNKF/XDjBj1Rhddef4MQOj4ioIABfeSkFG1nM00zJmt1FhcXsc4TjV8hGr+CdZ7FxUVq9TppmpbxoKAdAeojI9bfqhCUUIQS6L3HGKFer9NqtbCVCFuJaLVa1Ot1jAjed4ulCqEIFYKK9bdc36ez83Zg8N2+tTVhYCuqSkBwziEi1Go1zp07C0CtVsN7j3OOgKCquDc/xu17T2xvr/StLM87u+vVuQLOeNgJBMA45yiKgnKs17/sPg7Dxj0RwQ9tCwxtkwL+sC8wJwBff3V25OHj5fksyzNE3Orqqty9exdjDCJC6D5DY0wnghDYsWMH/f39imruvfNbNg+Ofvb5mQWJ49g2Go3i0KFDF6rV6kSSJJkxxkZRZFTLCko3XevzJElCCKGIosi32+3pmzdvno7j2AogCwsLZmxsrDh8+PAF7/1EnudkWRa6zrIuLFS7VO+9cc6RZdn0tWvXTs/NzdmRkZFQGpZO4ciRI0eBSWPM7jK8jTfbkIbbwFSz2ZztyA8FtPzzFAhxHNtmszmrqvtV9UQI4TpwDyi6/V4I4bqqnlDV/c1mczaOY9stpgL8C5nv5U56EwNfAAAAAElFTkSuQmCC" 
+              alt="Monero Logo" 
+              class="coin-logo"
+            />
+        </h3>
         <p class="address" id="xmr-address">8AdrpL55tvMhbwks3zKnHL2696qndThcwa36VBXtMAEdhcmjp3bUYhu9bF3Bwed9Mfg4gup4sFAa6VzwZEmVDPZjRR94bgy</p>
         <button class="copy-btn" onclick="copyToClipboard(this, 'xmr-address')">Copy Address</button>
     </div>
 
     <script>
+        // Show copy buttons (hidden by default)
         document.querySelectorAll(".copy-btn").forEach(btn => btn.style.display = "inline-block");
 
         function copyToClipboard(button, id) {
